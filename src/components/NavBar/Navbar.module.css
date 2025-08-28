@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbarList {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.navbarItems {
+    color: #fff;
+    letter-spacing: .1rem;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navbarItems:hover {
+    color: #4983ff;
+    transition: color 0.3s ease;
+}
+
+
