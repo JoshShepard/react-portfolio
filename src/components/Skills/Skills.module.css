@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.skillsContainer {
+    scroll-margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 25rem; /* Remove after rest of site is built - test nav link */
+}
+
+.skillTitle {
+    font-size: 4.5rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.skillList {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    width: 60%;
+    
+}
+
+.skillIcon {
+    color: #4983ff;
+    font-size: 6rem;
+}
