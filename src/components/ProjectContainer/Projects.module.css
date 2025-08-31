@@ -4,31 +4,25 @@
     padding: 0;
 }
 
-.skillsContainer {
+.projectContainer {
     scroll-margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    overflow-x: hidden;
-    margin-bottom: 15rem;
 }
 
-.skillTitle {
+.heading {
     font-size: 4.5rem;
-    padding: 2rem;
-    margin-bottom: 5rem;
+    color: #4983ff
 }
-
-.skillList {
+.projects {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
     padding: 2rem;
-    justify-content: space-between;
-    width: 60%;
 }
 
-.skillIcon {
-    color: #4983ff;
-    font-size: 6rem;
-}
+

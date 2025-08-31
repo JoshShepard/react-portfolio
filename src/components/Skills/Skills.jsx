@@ -27,7 +27,7 @@ function Skills() {
                     variants={skillIconVariant}
                     initial="hidden"
                     whileInView="visible"
-                    transition={{ type: 'spring', duration: 1.5, stiffness: 70, damping: 25, delay: 0.2 }}
+                    transition={{ type: 'spring', duration: 1.5, stiffness: 70, damping: 25, delay: 0.25 }}
                     viewport={{ once:true }}>
                     <FontAwesomeIcon icon={faJava} className={styles.skillIcon} />  
                 </motion.div>
