@@ -1,8 +1,9 @@
 import './App.css'
 import Navbar from './components/NavBar/Navbar';
 import Hero from './components/Hero/Hero';
-import Skills from './components/Skills/Skills';
 import Projects from './components/ProjectContainer/Projects';
+import Skills from './components/Skills/Skills';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Projects />
       <Skills />
+      <Footer />
     </>
   )
 }
