@@ -5,12 +5,13 @@
 }
 
 .footerContainer {
-    text-align: center;
     padding: 4rem;
     background-color: #3a3a3a;
+    overflow-x: hidden;
 }
 
 .header {
+    text-align: center;
     font-size: 4.5rem;
     color: #4983ff;
     padding: 2rem;
@@ -27,16 +28,40 @@
     display: flex;
     align-items: center;
     gap: .5rem;
+    padding: 1rem 1.25rem;
+    background-color: #242424;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.emailContainer:hover, .gitHubContainer:hover, .linkedinContainer:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .emailLink, .githubLink, .linkedinLink {
     color: #ffffffde;
     font-size: 1.25rem;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
+.emailLink:hover, .githubLink:hover, .linkedinLink:hover {
+    color: #4983ff; 
+} 
 
 .icon {
     font-size: 1.5rem;
-    color: #4983ff;
+}
+
+.email {
+    color: #4285F4; 
+}
+
+.github {
+    color: #2EA043;
+}
+
+.linkedin {
+    color: #0A66C2;
 }
