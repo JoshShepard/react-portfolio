@@ -51,7 +51,6 @@ function Projects() {
                 PROJECTS
             </motion.h2>
 
-            {/* TODO: Framer motion for the box of project cards */}
             <div className={styles.projects}>
                 {projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />
