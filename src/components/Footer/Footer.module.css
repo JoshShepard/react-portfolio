@@ -20,7 +20,8 @@
 
 .contactContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 4rem;
     padding: 4rem;
 }
 

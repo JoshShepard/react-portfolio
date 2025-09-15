@@ -7,25 +7,29 @@ import styles from './Footer.module.css';
 function Footer() {
     // Framer Motion Variants
     const headerVariant = {
-        hidden: { x: 600, opacity: 0 },
+        hidden: { x: 500, opacity: 0 },
         visible: {
             x: 0,
             opacity: 1,
-            transition: { type: "spring", stiffness: 40, damping: 12, delay: .2 }
+            transition: { type: "spring", stiffness: 40, damping: 12 }
+        }
+    };
+
+    const containerVariant = {
+        hidden: {},
+        visible: {
+            transition: { staggerChildren: 0.2 }
         }
     };
 
     const itemVariant = {
-        hidden: { scale: 0.75, opacity: 0 },
+        hidden: { x: -300, opacity: 0 },
         visible: { 
-            scale: 1, 
+            x: 0,
             opacity: 1,
-            transition: { 
-                scale: { type: "spring", stiffness: 30, damping: 12 },
-                opacity: { duration: 0.4, delay: 0.3 }
-            }
-  }
-};
+            transition: { type: "spring", stiffness: 40, damping: 12 }
+        }
+    };
 
     return (
         <footer id="contact" className={styles.footerContainer}>
@@ -41,6 +45,7 @@ function Footer() {
 
             <motion.div
                 className={styles.contactContainer}
+                variants={containerVariant}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
