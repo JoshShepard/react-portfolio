@@ -25,7 +25,7 @@
     display: flex;
     padding: 2rem;
     justify-content: space-between;
-    width: 60%;
+    gap: 4rem;
 }
 
 .skillIcon {
@@ -62,7 +62,6 @@
   }
 
   .skillList {
-    width: 80%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
@@ -74,11 +73,10 @@
   }
 }
 
-/* Phones / very small screens */
 @media (max-width: 576px) {
-    .skillsContainer {
-        margin-bottom: 7rem;
-    }
+  .skillsContainer {
+    margin-bottom: 7rem;
+  }
 
   .skillTitle {
     font-size: 2.5em;
@@ -87,7 +85,6 @@
   }
 
   .skillList {
-    width: 90%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.8rem;
