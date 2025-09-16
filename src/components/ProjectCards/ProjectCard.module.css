@@ -24,14 +24,14 @@
 }
 
 .projectTitle {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: #fff;
 }
 
 .projectDescription {
   padding: .25rem;
   color: #ccc;
-  font-size: 1rem;
+  font-size: 1em;
   text-align: center;
   line-height: 1.4;
 }
@@ -48,7 +48,7 @@
   color: #fff;
   padding: 0.25rem 0.75rem;
   border-radius: 8px;
-  font-size: 0.85rem;
+  font-size: 0.85em;
 }
 
 .projectLink {
@@ -61,4 +61,82 @@
 
 .projectLink:hover {
   color: #72aaff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .card {
+    max-width: 300px;
+    gap: 1.25rem;
+  }
+
+  .projectTitle {
+    font-size: 1.35em;
+  }
+
+  .projectDescription {
+    font-size: 0.95em;
+  }
+
+  .techStack span {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: auto;
+    max-height: 15rem;
+  }
+
+  .projectTitle {
+    font-size: 1.2em;
+  }
+
+  .projectDescription {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    max-width: 100%;
+    padding: 1rem;
+    gap: 0.8rem;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: auto;
+    max-height: 15rem;
+  }
+
+  .projectTitle {
+    font-size: 1.1em;
+  }
+
+  .projectDescription {
+    font-size: 0.85em;
+  }
+
+  .techStack {
+    gap: 0.5rem;
+  }
+
+  .techStack span {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .projectLink {
+    font-size: 0.9em;
+  }
 }
