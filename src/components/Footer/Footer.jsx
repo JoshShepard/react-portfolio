@@ -59,14 +59,14 @@ function Footer() {
 
                 <motion.div className={styles.gitHubContainer} variants={itemVariant}>
                     <FontAwesomeIcon icon={faGithub} className={`${styles.icon} ${styles.github}`} />
-                    <a href="https://github.com/JoshShepard" target="_blank" rel="noreferrer" className={styles.githubLink}>
+                    <a href="https://github.com/JoshShepard" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
                         Visit My GitHub Profile!
                     </a>
                 </motion.div>
 
                 <motion.div className={styles.linkedinContainer} variants={itemVariant}>
                     <FontAwesomeIcon icon={faLinkedin} className={`${styles.icon} ${styles.linkedin}`} />
-                    <a href="https://www.linkedin.com/in/joshua-shepard-66614b240" target="_blank" rel="noreferrer" className={styles.linkedinLink}>
+                    <a href="https://www.linkedin.com/in/joshua-shepard-66614b240" target="_blank" rel="noopener noreferrer" className={styles.linkedinLink}>
                         LinkedIn
                     </a>
                 </motion.div>

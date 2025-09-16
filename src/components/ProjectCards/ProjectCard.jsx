@@ -16,7 +16,7 @@ function ProjectCard({ title, description, image, techStack, repoLink }) {
         	{techStack.map((tech, i) => (
           	<span key={i}>{tech}</span>))}
       	</div>
-      	<a href={repoLink} target="_blank" className={styles.projectLink}>
+      	<a href={repoLink} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
         	GitHub Repo
       	</a>
     </motion.div>
