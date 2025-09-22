@@ -85,9 +85,10 @@
   .skillList {
     gap: 1rem;
     padding: 0.5rem;
+    border: 2px solid red;
   }
 
   .skillIcon {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }
