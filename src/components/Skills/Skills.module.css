@@ -23,9 +23,12 @@
 
 .skillList {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
-    justify-content: space-between;
     gap: 4rem;
+    margin: 0 auto;
 }
 
 .skillIcon {
@@ -42,11 +45,8 @@
   }
 
   .skillList {
-    width: 100%;
+    gap: 2.5rem;
     padding: 1.5rem;
-    gap: 1.5rem;
-    display: flex;
-    justify-content: space-around;
   }
 
   .skillIcon {
@@ -62,9 +62,7 @@
   }
 
   .skillList {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1rem;
   }
 
@@ -85,13 +83,11 @@
   }
 
   .skillList {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem;
+    gap: 1rem;
     padding: 0.5rem;
   }
 
   .skillIcon {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }

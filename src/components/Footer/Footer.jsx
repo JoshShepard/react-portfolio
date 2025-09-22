@@ -37,8 +37,8 @@ function Footer() {
                 className={styles.header}
                 variants={headerVariant}
                 initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
+                animate="visible"
+                viewport={{ once: true, amount: 0.2 }}
             >
                 Lets Connect!
             </motion.h2>
