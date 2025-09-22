@@ -5,7 +5,7 @@ import { faJava, faHtml5, faCss3Alt, faJs, faGit, faReact } from '@fortawesome/f
 
 // Icon Variant Object
 const skillIconVariant = {
-    hidden: { x: -100, opacity: 0, rotate: 0 },
+    hidden: { x: -50, opacity: 0, rotate: 0 },
     visible: { x: 0, scale: 1, opacity: 1, rotate: 360 },
 };
 

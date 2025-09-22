@@ -6,15 +6,6 @@ import styles from './Footer.module.css';
 
 function Footer() {
     // Framer Motion Variants
-    const headerVariant = {
-        hidden: { x: 500, opacity: 0 },
-        visible: {
-            x: 0,
-            opacity: 1,
-            transition: { type: "spring", stiffness: 40, damping: 12 }
-        }
-    };
-
     const containerVariant = {
         hidden: {},
         visible: {
@@ -23,23 +14,22 @@ function Footer() {
     };
 
     const itemVariant = {
-        hidden: { x: -300, opacity: 0 },
+        hidden: { y:20, opacity: 0 },
         visible: { 
-            x: 0,
+            y: 0,
             opacity: 1,
-            transition: { type: "spring", stiffness: 40, damping: 12 }
+            transition: { type: "spring", stiffness: 70, damping: 12 }
         }
     };
 
     return (
         <footer id="contact" className={styles.footerContainer}>
             <motion.h2
-                className={styles.header}
-                variants={headerVariant}
-                initial="hidden"
-                animate="visible"
-                viewport={{ once: true, amount: 0.2 }}
-            >
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ type: 'spring', duration: 1.25, stiffness: 70, damping: 25 }}
+                viewport={{ once:true }}
+                className={styles.header}>
                 Lets Connect!
             </motion.h2>
 
